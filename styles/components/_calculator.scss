@@ -1,0 +1,133 @@
+.converter-content {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1rem;
+}
+
+.converter-form {
+  background-color: $secundary-color;
+  margin: auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.converter-products {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.converter-product {
+  width: 40%;
+  margin-bottom: 0;
+}
+
+.product-separation {
+  font-size: 1.8em;
+  margin: 0;
+}
+
+.converter-cat {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.converter-input {
+  height: 40px;
+  padding-left: 10px;
+  border: none;
+  background-color: #605f5f;
+  color: $primary-color;
+  font-weight: bold;
+}
+
+::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: $primary-color;
+}
+
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: $primary-color;
+  opacity: 1;
+}
+
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: $primary-color;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: $primary-color;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: $primary-color;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.alarm {
+  border: 2px solid red;
+}
+
+.modal-wrapper {
+  display: none;
+  justify-content: center;
+}
+
+.modal {
+  width: 200px;
+  height: 200px;
+  background-color: $secundary-color;
+  border: 4px solid $primary-color;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 90;
+  top: 30px;
+}
+
+.modal-open {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(192,192,192,0.3);
+}
+@media (min-width: 768px) {
+  .converter-content {
+    width: 60%;
+  }
+
+  .converter-form {
+    width: 80%;
+  }
+
+  .converter-products {
+    width: 80%;
+  }
+
+  .converter-cat {
+    width: 80%;
+  }
+}

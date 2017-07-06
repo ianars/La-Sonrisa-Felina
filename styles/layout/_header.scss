@@ -1,0 +1,20 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: $secundary-color;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+}
+
+.opacity {
+  background-color: $secundary-color;
+  transition: 1s linear;
+  box-shadow: 0 5px 3px rgba(0, 0, 0, 0.25);
+}
+@media(min-width: $min-size-mobile) {
+  header {
+    background-color: rgba(77, 77, 77, 0.5);
+  }
+}

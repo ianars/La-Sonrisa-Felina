@@ -1,0 +1,101 @@
+.img_background1,
+.img_background2,
+.img_background3,
+.img_background4 {
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+}
+
+.img_background1 {
+  background-image: url("../images/cat1.jpg");
+  min-height: 100%;
+}
+
+.img_background2 {
+  background-image: url("../images/cat2.jpg");
+  min-height: $bg-img;
+}
+
+.img_background3 {
+  background-image: url("../images/cat3.jpg");
+  min-height: $bg-img;
+}
+
+.img_background4 {
+  background-image: url("../images/cat4.jpg");
+  min-height: 100%;
+}
+
+.principal-section-title {
+  position: absolute;
+  top: 55%;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+}
+
+.text-container {
+  position: relative;
+  padding: $padding-container-mobile;
+  background-color: $sections-bg-color;
+}
+
+.secondary-section-title {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+}
+
+.calc-container {
+  background-color: $secundary-color;
+  padding: 40px;
+}
+
+.title {
+  display: inline-block;
+  background-color: $secundary-color;
+  color: $primary-color;
+  padding: 10px 25px;
+}
+
+.blank {
+  position: relative;
+  height: 0;
+  bottom: 45px;
+}
+
+.up-page {
+  width: 50px;
+  position: fixed;
+  display: none;
+  bottom: 20px;
+  right: 10px;
+  cursor: pointer;
+  z-index: 98;
+}
+@media (min-device-width: $min-size-mobile) {
+  .img_background1,
+  .img_background2,
+  .img_background3,
+  .img_background4 {
+    background-attachment: fixed;
+  }
+
+  .secondary-section-title {
+    top: 40%;
+  }
+
+  .up-page {
+    width: 65px;
+  }
+
+  .text-container {
+    padding: $padding-container;
+    text-align: justify;
+  }
+}

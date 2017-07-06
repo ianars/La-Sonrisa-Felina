@@ -1,0 +1,91 @@
+.navButton {
+  width: 40px;
+  height: 35px;
+  transform: rotate(0deg);
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 20px;
+}
+
+.navButton span {
+  display: block;
+  position: absolute;
+  height: 16.5%;
+  width: 100%;
+  background: $primary-color;
+  border-radius: 16.5%;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: 0.25s ease-in-out;
+}
+
+.navButton span:nth-child(1) {
+  top: 0;
+}
+
+.navButton span:nth-child(2) {
+  top: 41.75%;
+}
+
+.navButton span:nth-child(3) {
+  bottom: 0;
+}
+
+.navButton.open span:nth-child(1) {
+  top: 33%;
+  transform: rotate(135deg);
+}
+
+.navButton.open span:nth-child(2) {
+  opacity: 0;
+  left: -60px;
+}
+
+.navButton.open span:nth-child(3) {
+  bottom: 33%;
+  transform: rotate(-135deg);
+}
+
+.converter-button {
+  height: 40px;
+  width: 100%;
+  border: 4px solid $primary-color;
+  background-color: $secundary-color;
+  color: orange;
+  font-size: 1.2rem;
+}
+
+.converter-btn-hover:hover {
+  background-color: $primary-color;
+  border: none;
+  color: white;
+  transition: border linear 0.5s, background-color linear 0.5s, color linear 0.5s;
+}
+
+.modal-input {
+  height: 40px;
+  width: 40%;
+  border: 4px solid $primary-color;
+  background-color: $secundary-color;
+  color: $primary-color;
+  font-size: 1.2rem;
+}
+
+.modal-input:hover {
+  background-color: $primary-color;
+  border: none;
+  color: white;
+  transition: border linear 0.5s, background-color linear 0.5s, color linear 0.5s;
+}
+@media(min-width: $min-size-mobile) {
+  .navButton {
+    display: none;
+  }
+
+  .converter-button {
+    width: 80%;
+  }
+}

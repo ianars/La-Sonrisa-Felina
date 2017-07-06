@@ -1,0 +1,48 @@
+.title {
+  font-family: $secondary-font;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.converter-title {
+  width: 100%;
+  margin: auto;
+  padding: 5px;
+  background-color: $primary-color;
+  color: $secundary-color;
+  text-align: center;
+  font-weight: bold;
+}
+
+.converter-text {
+  width: 80%;
+  color: $primary-color;
+  margin: 5px;
+  text-align: center;
+}
+
+.converter-result {
+  text-align: center;
+  font-size: 1.2rem;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.modal-text {
+  color: white;
+  font-weight: bold;
+  font-size: 1.2em;
+  text-align: center;
+}
+@media (min-width: $min-size-mobile) {
+  .title {
+    font-size: 32px;
+  }
+
+  .converter-title {
+    font-size: 2em;
+    width: 64%;
+  }
+}
